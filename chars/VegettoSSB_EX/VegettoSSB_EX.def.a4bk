@@ -1,0 +1,24 @@
+[Info]
+name = "Vegetto"
+displayname = "Vegetto SSB"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite = VegettoSSB_EX.sff
+anim = VegettoSSB_EX.air
+sound = VegettoSSB_EX.snd
+cmd = VegettoSSB_EX.cmd
+cns = VegettoSSB_EX.cns
+stcommon = common1.cns
+st = VegettoSSB_EX.cns
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+pal1 = 1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

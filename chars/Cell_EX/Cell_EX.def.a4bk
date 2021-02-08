@@ -1,0 +1,25 @@
+[Info]
+name ="Cell"
+displayname ="Cell"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite = Cell_EX.sff
+anim = Cell_EX.air
+sound = Cell_EX.snd
+cmd = Cell_EX.cmd
+cns = Cell_EX.cns
+stcommon = common1.cns
+st = Cell_EX.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+pal1 = 1.act
+pal2 = 2.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

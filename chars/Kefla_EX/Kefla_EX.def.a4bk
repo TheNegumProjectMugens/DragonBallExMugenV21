@@ -1,0 +1,25 @@
+[Info]
+name ="Kefla"
+displayname ="Kefla"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults =1
+
+[Files]
+sprite =Kefla_EX.sff
+anim =Kefla_EX.air
+sound =Kefla_EX.snd
+cmd =Kefla_EX.cmd
+cns =Kefla_EX.cns
+stcommon =common1.cns
+st =Kefla_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=SSJ.cns
+st3=Specials.cns
+st4=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

@@ -1,0 +1,25 @@
+[Info]
+name = "Hitto"
+displayname = "Hitto"
+versiondate = 1/N/53PH
+mugenversion = 1.0
+author = "ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite = Hitto_EX.sff
+anim = Hitto_EX.air
+sound = Hitto_EX.snd
+cmd = Hitto_EX.cmd
+cns = Hitto_EX.cns
+stcommon = common1.cns
+st = Hitto_EX.cns
+pal1 = 1.act
+pal2 = 2.act
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

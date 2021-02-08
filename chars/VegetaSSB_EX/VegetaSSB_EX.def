@@ -1,0 +1,27 @@
+; ADD004 BASIC PIEs ReBuilded DEF (01/04/2018)
+;==============================================
+; This file is Made by PIE.
+; there is a backup of this file in the same folder, named "<samename>.a4bk".
+; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
+;==============================================
+
+[Info]
+name ="Vegeta"
+displayname ="Vegeta SSB"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults =1,2
+[Files]
+sprite =VegetaSSB_EX.sff
+anim =VegetaSSB_EX.air
+sound =VegetaSSB_EX.snd
+cmd =VegetaSSB_EX.cmd
+cns=add004basic.reb1
+st=add004basic.reb1
+stcommon=common1.cns
+pal1=1.act
+pal2=2.act
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

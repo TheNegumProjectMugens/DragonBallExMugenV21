@@ -1,0 +1,25 @@
+[Info]
+name ="Gohan"
+displayname ="Gohan"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults =1
+
+[Files]
+sprite =Gohan_EX.sff
+anim =Gohan_EX.air
+sound =Gohan_EX.snd
+cmd =Gohan_EX.cmd
+cns =Gohan_EX.cns
+stcommon =common1.cns
+st =Gohan_EX.cns
+pal1=1.act
+pal2=2.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

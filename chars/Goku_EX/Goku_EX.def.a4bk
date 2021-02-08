@@ -1,0 +1,25 @@
+[Info]
+name = "Goku"
+displayname = "Goku"
+versiondate = 1/N/53PH
+mugenversion = 1.0
+author = "ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite = Goku_EX.sff
+anim = Goku_EX.air
+sound = Goku_EX.snd
+cmd = Goku_EX.cmd
+cns = Goku_EX.cns
+stcommon = common1.cns
+st = Goku_EX.cns
+pal1 = 1.act
+pal2 = 2.act
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

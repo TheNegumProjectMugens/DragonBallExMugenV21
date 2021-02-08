@@ -1,0 +1,24 @@
+[Info]
+name ="Krilin"
+displayname ="Krilin"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite =Krilin_EX.sff
+anim =Krilin_EX.air
+sound =Krilin_EX.snd
+cmd =Krilin_EX.cmd
+cns =Krilin_EX.cns
+stcommon =common1.cns
+st =Krilin_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

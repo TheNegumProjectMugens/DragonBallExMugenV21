@@ -1,0 +1,25 @@
+[Info]
+name ="Vegeta"
+displayname ="Vegeta"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults =1,2
+
+[Files]
+sprite =Vegeta_EX.sff
+anim =Vegeta_EX.air
+sound =Vegeta_EX.snd
+cmd =Vegeta_EX.cmd
+cns =Vegeta_EX.cns
+stcommon =common1.cns
+st =Vegeta_EX.cns
+pal1=1.act
+pal2=2.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

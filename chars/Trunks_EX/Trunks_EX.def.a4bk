@@ -1,0 +1,25 @@
+[Info]
+name ="Mirai Trunks"
+displayname ="Trunks"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults =1,2
+
+[Files]
+sprite =Trunks_EX.sff
+anim =Trunks_EX.air
+sound =Trunks_EX.snd
+cmd =Trunks_EX.cmd
+cns =Trunks_EX.cns
+stcommon =common1.cns
+st =Trunks_EX.cns
+pal1=1.act
+pal2=2.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

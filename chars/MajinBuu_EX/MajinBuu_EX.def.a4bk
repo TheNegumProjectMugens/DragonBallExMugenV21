@@ -1,0 +1,24 @@
+[Info]
+name = "Majin Buu"
+displayname = "Majin Buu"
+versiondate = 1/N/53PH
+mugenversion = 1.0
+author = "ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite =MajinBuu_EX.sff
+anim =MajinBuu_EX.air
+sound =MajinBuu_EX.snd
+cmd =MajinBuu_EX.cmd
+cns =MajinBuu_EX.cns
+stcommon =common1.cns
+st =MajinBuu_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

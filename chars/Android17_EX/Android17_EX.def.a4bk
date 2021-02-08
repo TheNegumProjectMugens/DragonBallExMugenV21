@@ -1,0 +1,24 @@
+[Info]
+name ="Android 17"
+displayname ="Android 17"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults =1
+
+[Files]
+sprite =Android17_EX.sff
+anim =Android17_EX.air
+sound =Android17_EX.snd
+cmd =Android17_EX.cmd
+cns =Android17_EX.cns
+stcommon =common1.cns
+st =Android17_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiais.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

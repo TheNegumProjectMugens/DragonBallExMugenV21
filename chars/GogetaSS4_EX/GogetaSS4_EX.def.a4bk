@@ -1,0 +1,24 @@
+[Info]
+name = "Gogeta"
+displayname = "Gogeta SS4"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite = GogetaSS4_EX.sff
+anim = GogetaSS4_EX.air
+sound = GogetaSS4_EX.snd
+cmd = GogetaSS4_EX.cmd
+cns = GogetaSS4_EX.cns
+stcommon = common1.cns
+st = GogetaSS4_EX.cns
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+pal1 = 1.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

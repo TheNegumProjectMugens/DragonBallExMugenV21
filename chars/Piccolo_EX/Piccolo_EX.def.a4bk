@@ -1,0 +1,24 @@
+[Info]
+name ="Piccolo"
+displayname ="Piccolo"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults =1
+
+[Files]
+sprite =Piccolo_EX.sff
+anim =Piccolo_EX.air
+sound =Piccolo_EX.snd
+cmd =Piccolo_EX.cmd
+cns =Piccolo_EX.cns
+stcommon =common1.cns
+st =Piccolo_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

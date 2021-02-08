@@ -1,0 +1,24 @@
+[Info]
+name ="Metal Cooler"
+displayname ="Metal Cooler"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite =MetalCooler_EX.sff
+anim =MetalCooler_EX.air
+sound =MetalCooler_EX.snd
+cmd =MetalCooler_EX.cmd
+cns =MetalCooler_EX.cns
+stcommon =common1.cns
+st =MetalCooler_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

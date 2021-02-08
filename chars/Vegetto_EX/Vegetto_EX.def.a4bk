@@ -1,0 +1,25 @@
+[Info]
+name = "Vegetto"
+displayname = "Vegetto"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1,2
+
+[Files]
+sprite = Vegetto_EX.sff
+anim = Vegetto_EX.air
+sound = Vegetto_EX.snd
+cmd = Vegetto_EX.cmd
+cns = Vegetto_EX.cns
+stcommon = common1.cns
+st = Vegetto_EX.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+pal1 = 1.act
+pal2 = 2.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

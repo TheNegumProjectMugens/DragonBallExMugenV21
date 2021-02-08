@@ -1,0 +1,25 @@
+[Info]
+name = "Jiren"
+displayname = "Jiren"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite = Jiren_EX.sff
+anim = Jiren_EX.air
+sound = Jiren_EX.snd
+cmd = Jiren_EX.cmd
+cns = Jiren_EX.cns
+stcommon = common1.cns
+st = Jiren_EX.cns
+pal1 = 1.act
+pal2 = 2.act
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

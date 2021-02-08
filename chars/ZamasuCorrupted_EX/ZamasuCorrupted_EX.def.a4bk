@@ -1,0 +1,24 @@
+[Info]
+name ="Zamasu Gattai"
+displayname ="Zamasu Corrupted"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite =ZamasuCorrupted_EX.sff
+anim =ZamasuCorrupted_EX.air
+sound =ZamasuCorrupted_EX.snd
+cmd =ZamasuCorrupted_EX.cmd
+cns =ZamasuCorrupted_EX.cns
+stcommon =common1.cns
+st =ZamasuCorrupted_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard =

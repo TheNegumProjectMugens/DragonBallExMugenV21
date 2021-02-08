@@ -1,0 +1,24 @@
+[Info]
+name ="Goku Migatte Full"
+displayname ="Goku Migatte Full"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite =GokuMigatteFull_EX.sff
+anim =GokuMigatteFull_EX.air
+sound =GokuMigatteFull_EX.snd
+cmd =GokuMigatteFull_EX.cmd
+cns =GokuMigatteFull_EX.cns
+stcommon =common1.cns
+st =GokuMigatteFull_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=Especiales.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

@@ -1,0 +1,24 @@
+[Info]
+name = "Masked Saiyan"
+displayname = "Masked Saiyan"
+versiondate = 1/N/53PH
+mugenversion = 1.0
+author = "ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite =MaskedSaiyan_EX.sff
+anim =MaskedSaiyan_EX.air
+sound =MaskedSaiyan_EX.snd
+cmd =MaskedSaiyan_EX.cmd
+cns =MaskedSaiyan_EX.cns
+stcommon =common1.cns
+st =MaskedSaiyan_EX.cns
+pal1=1.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

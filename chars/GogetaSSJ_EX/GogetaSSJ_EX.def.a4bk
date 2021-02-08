@@ -1,0 +1,25 @@
+[Info]
+name = "Gogeta"
+displayname = "Gogeta SSJ"
+versiondate =1/N/53PH
+mugenversion =1.0
+author ="ProjectEX"
+pal.defaults = 1
+
+[Files]
+sprite = GogetaSSJ_EX.sff
+anim = GogetaSSJ_EX.air
+sound = GogetaSSJ_EX.snd
+cmd = GogetaSSJ_EX.cmd
+cns = GogetaSSJ_EX.cns
+stcommon = common1.cns
+st = GogetaSSJ_EX.cns
+st1 = IA.cns
+st2 = Especiales.cns
+st3 = Supers.cns
+pal1 = 1.act
+pal2 = 2.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 
