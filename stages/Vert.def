@@ -1,0 +1,160 @@
+;--------------------------------------------------------
+[Info]
+name = "VBA"
+DisplayName = "R" 
+Author = "Funes7"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -200
+boundright = 200
+boundhigh = -200
+boundlow = 10
+verticalfollow = 0.2
+
+floortension = 100
+tension = 200
+tensionhigh = 350
+tensionlow = 200
+overdrawhigh = 120
+overdrawlow = 120
+cuthigh = 0
+cutlow = 0
+zoomin = 1
+zoomout = .3
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -270          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 270
+p2starty = 0
+p2facing = -1
+
+;--- Player 1 ---
+p3startx = -380         
+p3starty = 0          
+p3facing = 1       
+
+;--- Player 2 ---
+p4startx = 380
+p4starty = 0
+p4facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -8000 ;Left bound (x-movement)
+rightbound = 8000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 60   ;Dist from left of screen that player can move to
+screenright = 60   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 620
+autoturn = 1
+resetBG = 0
+localcoord = 1280, 720
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 0
+color = 0, 0, 0
+yscale = .45
+
+[Reflection]
+intensity = 75
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/vert.mp3
+bgmvolume = 255
+
+;Main background definition
+[BGdef]
+spr = vert.sff
+debugbg = 0
+
+;--------------------------------------------------------
+; Layers:
+
+
+
+[BG 0, Floor]
+Type = Parallax
+SpriteNO = 0, 0
+Mask = 1
+Start = 0, 670
+Delta = 0.195, 0.765
+Tile = 1, 0
+;XScale = 1, 0.82;
+Width = 75, 825
+YScaleDelta = .20
+YScaleStart = 200
+ScaleStart = 2.5,5
+Trans = AddAlpha
+Alpha = 64, 256
+
+[BG 0, BG]
+Type = Normal
+SpriteNO = 0, 1
+Mask = 1
+Start = 0, -1500
+Delta = 0.3, 1
+Tile = 1, 0
+Velocity = 0, 0
+Trans = AddAlpha
+Alpha = 128, 256
+
+[BG 0, BG]
+Type = Normal
+SpriteNO = 0, 1
+Mask = 1
+Start = 0, -1000
+Delta = 0.4, 1
+Tile = 1, 0
+Velocity = 0, 0
+Trans = AddAlpha
+Alpha = 128, 256
+
+[BG 0, BG]
+Type = Normal
+SpriteNO = 0, 1
+Mask = 1
+Start = 0, -500
+Delta = 0.5, 1
+Tile = 1, 0
+Velocity = 0, 0
+Trans = AddAlpha
+Alpha = 192, 256
+
+[BG 0, BG]
+Type = Normal
+SpriteNO = 0, 1
+Mask = 1
+Start = 0, 0
+Delta = 0.6, 1
+Tile = 1, 0
+Velocity = 0, 0
+
+;--------------------------------------------------------
+; Anims:
