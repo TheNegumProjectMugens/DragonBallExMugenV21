@@ -1,0 +1,462 @@
+; Motif: MM2_BS (add004 basic)
+
+; [16:9]/[4:3]
+; -240p(320x180/240)
+; -480p(640x360/480)
+; -720p(1280x720)
+; -1080p/2k(1920/2048x1080)
+; -2160p/4k(3840/4096x2160)
+
+;------------------
+[files]
+	sff=fight.sff
+	snd=fight.snd
+
+;op;	font1= enter48.def	;; * system font
+	font2=  font.fnt	;; * system font
+;op;	font3= combo.fnt	;; combo
+	font4= timer.fnt	;; timer
+	font5=  wins.fnt	;; win icon
+	font6=  name.fnt	;; name font
+
+	fightfx.sff=fightfx_bs.sff
+	fightfx.air=fight_air_bs.txt
+	common.snd=common_bs0.snd
+
+;------------------
+[fightFx]
+;	scale=1 ;;(240p)
+	scale=2 ;;(480p)
+;	scale=4 ;;(720p)
+;	scale=6 ;;(1080p)
+;	scale=12 ;;(2160p)
+;	;scale=...
+
+;------------------
+[lifebar]
+	p1.pos=0,0
+	p2.pos=0,0
+
+[simul lifebar]
+	p1.pos=0,0
+	p3.pos=0,0
+	p2.pos=0,0
+	p4.pos=0,0
+
+[turns lifebar]
+	p1.pos=0,0
+	p2.pos=0,0
+
+;------------------
+[powerbar]
+	p1.pos=0,0
+	p2.pos=0,0
+	level1.snd=-1
+	level2.snd=-1
+	level3.snd=-1
+
+;------------------
+[face]
+	p1.pos=0,0
+	p2.pos=0,0
+	p1.face.spr= -1
+	p2.face.spr= -1
+[simul face]
+	p1.pos=0,0
+	p3.pos=0,0
+	p2.pos=0,0
+	p4.pos=0,0
+	p1.face.spr= -1
+	p2.face.spr= -1
+	p3.face.spr= -1
+	p4.face.spr= -1
+
+[turns face]
+	p1.pos=0,0
+	p2.pos=0,0
+	p1.face.spr= -1
+	p2.face.spr= -1
+
+	p1.teammate.bg.anim=400
+	p2.teammate.bg.anim=400
+	p1.teammate.ko.anim=410
+	p2.teammate.ko.anim=410
+	p1.teammate.bg.facing= 1
+	p2.teammate.bg.facing=-1
+	p1.teammate.ko.facing= 1
+	p2.teammate.ko.facing=-1
+	p1.teammate.face.facing= 1
+	p2.teammate.face.facing=-1
+	p1.teammate.face.spr=9000,0
+	p2.teammate.face.spr=9000,0
+	p1.teammate.bg.offset=0,0
+	p2.teammate.bg.offset=0,0
+	p1.teammate.ko.offset=0,0
+	p2.teammate.ko.offset=0,0
+	p1.teammate.face.offset=0,0
+	p2.teammate.face.offset=0,0
+	p1.teammate.face.scale=0.5,0.5
+	p2.teammate.face.scale=0.5,0.5
+
+	;---(240p) x1
+;	p1.teammate.pos=         0, 39
+;	p2.teammate.pos=       320, 39
+;	p1.teammate.spacing=    12, 0
+;	p2.teammate.spacing=   -12, 0
+;	p1.teammate.bg.scale=  0.5, 0.25
+;	p2.teammate.bg.scale=  0.5, 0.25
+;	p1.teammate.ko.scale=  0.5, 0.25
+;	p2.teammate.ko.scale=  0.5, 0.25
+	;---(480p) x2
+	p1.teammate.pos=         0, 78
+	p2.teammate.pos=       640, 78
+	p1.teammate.spacing=    24, 0
+	p2.teammate.spacing=   -24, 0
+	p1.teammate.bg.scale=    1, 0.5
+	p2.teammate.bg.scale=    1, 0.5
+	p1.teammate.ko.scale=    1, 0.5
+	p2.teammate.ko.scale=    1, 0.5
+	;---(720p) x4
+;	p1.teammate.pos=         0, 156
+;	p2.teammate.pos=      1280, 156
+;	p1.teammate.spacing=    48, 0
+;	p2.teammate.spacing=   -48, 0
+;	p1.teammate.bg.scale=    2, 1
+;	p2.teammate.bg.scale=    2, 1
+;	p1.teammate.ko.scale=    2, 1
+;	p2.teammate.ko.scale=    2, 1
+
+	;---(1080p) x6
+;	p1.teammate.pos=         0, 234
+;	p2.teammate.pos=      1920, 234
+;	p1.teammate.spacing=    72, 0
+;	p2.teammate.spacing=   -72, 0
+;	p1.teammate.bg.scale=    3, 1.5
+;	p2.teammate.bg.scale=    3, 1.5
+;	p1.teammate.ko.scale=    3, 1.5
+;	p2.teammate.ko.scale=    3, 1.5
+	;---(2160p) x12
+;	p1.teammate.pos=         0, 468
+;	p2.teammate.pos=      3840, 468
+;	p1.teammate.spacing=   144, 0
+;	p2.teammate.spacing=  -144, 0
+;	p1.teammate.bg.scale=    6, 3
+;	p2.teammate.bg.scale=    6, 3
+;	p1.teammate.ko.scale=    6, 3
+;	p2.teammate.ko.scale=    6, 3
+
+;------------------
+[name]
+	p1.name.font=6,8, 1
+	p2.name.font=6,8,-1
+
+	;---(240p) x1
+;	p1.pos=          36, 28
+;	p2.pos=         284, 28
+;	p1.name.scale=    1, 1
+;	p2.name.scale=    1, 1
+	;---(480p) x2
+	p1.pos=          72, 56
+	p2.pos=         568, 56
+	p1.name.scale=    2, 2
+	p2.name.scale=    2, 2
+	;---(720p) x4
+;	p1.pos=         144, 112
+;	p2.pos=        1136, 112
+;	p1.name.scale=    4, 4
+;	p2.name.scale=    4, 4
+
+	;---(1080p) x6
+;	p1.pos=         216, 168
+;	p2.pos=        1704, 168
+;	p1.name.scale=    6, 6
+;	p2.name.scale=    6, 6
+	;---(2160p) x12
+;	p1.pos=         432, 336
+;	p2.pos=        3408, 336
+;	p1.name.scale=   12, 12
+;	p2.name.scale=   12, 12
+
+[simul Name]
+	p1.name.font=6,8, 1
+	p3.name.font=6,8, 1
+	p2.name.font=6,8,-1
+	p4.name.font=6,8,-1
+
+	;---(240p) x1
+;	p1.pos=          45, 28
+;	p3.pos=          40, 34
+;	p2.pos=         275, 28
+;	p4.pos=         280, 34
+;	p1.name.scale=    1, 1
+;	p2.name.scale=    1, 1
+;	p3.name.scale=    1, 1
+;	p4.name.scale=    1, 1
+	;---(480p) x2
+	p1.pos=          90, 56
+	p3.pos=          80, 68
+	p2.pos=         550, 56
+	p4.pos=         560, 68
+	p1.name.scale=    2, 2
+	p2.name.scale=    2, 2
+	p3.name.scale=    2, 2
+	p4.name.scale=    2, 2
+	;---(720p) x4
+;	p1.pos=         180, 112
+;	p3.pos=         160, 136
+;	p2.pos=        1100, 112
+;	p4.pos=        1120, 136
+;	p1.name.scale=    4, 4
+;	p2.name.scale=    4, 4
+;	p3.name.scale=    4, 4
+;	p4.name.scale=    4, 4
+
+	;---(1080p) x6
+;	p1.pos=         270, 168
+;	p3.pos=         240, 204
+;	p2.pos=        1650, 168
+;	p4.pos=        1680, 204
+;	p1.name.scale=    6, 6
+;	p2.name.scale=    6, 6
+;	p3.name.scale=    6, 6
+;	p4.name.scale=    6, 6
+	;---(2160p) x12
+;	p1.pos=         540, 336
+;	p3.pos=         480, 408
+;	p2.pos=        3300, 336
+;	p4.pos=        3360, 408
+;	p1.name.scale=   12, 12
+;	p2.name.scale=   12, 12
+;	p3.name.scale=   12, 12
+;	p4.name.scale=   12, 12
+
+[turns name]
+	p1.name.font=6,8, 1
+	p2.name.font=6,8,-1
+
+	;---(240p) x1
+;	p1.pos=          36, 28
+;	p2.pos=         284, 28
+;	p1.name.scale=    1, 1
+;	p2.name.scale=    1, 1
+	;---(480p) x2
+	p1.pos=          72, 56
+	p2.pos=         568, 56
+	p1.name.scale=    2, 2
+	p2.name.scale=    2, 2
+	;---(720p) x4
+;	p1.pos=         144, 112
+;	p2.pos=        1136, 112
+;	p1.name.scale=    4, 4
+;	p2.name.scale=    4, 4
+
+	;---(1080p) x6
+;	p1.pos=         216, 168
+;	p2.pos=        1704, 168
+;	p1.name.scale=    6, 6
+;	p2.name.scale=    6, 6
+	;---(2160p) x12
+;	p1.pos=         432, 336
+;	p2.pos=        3408, 336
+;	p1.name.scale=    12, 12
+;	p2.name.scale=    12, 12
+
+;------------------
+[time]
+	bg.anim=-1
+	framespercount=150
+	counter.font=4,1,0
+	counter.offset=0,0
+
+	;---(240p) x1
+;	pos=             160, 21
+;	counter.scale=  1.02, 1
+	;---(480p) x2
+	pos=             320, 42
+	counter.scale=  2.02, 2
+	;---(720p) x4
+;	pos=             640, 84
+;	counter.scale=  4.02, 4
+
+	;---(1080p) x6
+;	pos=             960, 126
+;	counter.scale=  6.12, 6
+	;---(2160p) x12
+;	pos=            1920, 252
+;	counter.scale= 12.24, 12
+
+;------------------
+[combo]
+	text.fnt=-1
+	text=
+	displaytime=0
+
+;------------------
+[round]
+	match.wins=1
+	match.maxdrawgames=1
+	start.waittime=0
+
+	round.time=0
+	round.default.font=-1
+	round.default.anim=-1
+	round.default.displaytime=0
+
+	fight.time=0
+	fight.anim=-1
+	fight.snd=-1
+	fight.sndtime=0
+	ctrl.time=85
+
+	KO.time=0
+	KO.offset=0,0
+	KO.anim=-1
+	KO.snd=-1
+	KO.sndtime=0
+
+	DKO.offset=0
+	DKO.anim=-1
+	DKO.snd=-1
+	DKO.displaytime=60
+
+	;//time over//
+	TO.anim=11100
+	TO.displaytime=100
+	TO.snd=3,0
+
+	;---(240p) x1
+;	TO.offset=     80, 60
+;	TO.scale=       1, 1
+	;---(480p) x2
+	TO.offset=    160, 120
+	TO.scale=       2, 2
+	;---(720p) x4
+;	TO.offset=    320, 240
+;	TO.scale=       4, 4
+
+	;---(1080p) x6
+;	TO.offset=    480, 360
+;	TO.scale=       6, 6
+	;---(2160p) x12
+;	TO.offset=    960, 720
+;	TO.scale=      12, 12
+
+
+	slow.time=60
+
+	over.waittime=90
+	over.hittime=0
+	over.wintime=30
+	over.time=210
+
+	win.time=80
+
+	draw.anim=11200
+	draw.displaytime=600
+	draw.snd=3,1
+
+	;---(240p) x1
+;	draw.offset=   80, 60
+;	draw.scale=     1, 1
+	;---(480p) x2
+	draw.offset=  160, 120
+	draw.scale=     2, 2
+	;---(720p) x4
+;	draw.offset=  320, 240
+;	draw.scale=     4, 4
+
+	;---(1080p) x6
+;	draw.offset=  480, 360
+;	draw.scale=     6, 6
+	;---(2160p) x12
+;	draw.offset=  960, 720
+;	draw.scale=    12, 12
+
+;------------------
+[winicon]
+	p1.counter.font=5,0,-1
+	p2.counter.font=5,0, 1
+	useiconupto=0
+
+	;---(240p) x1
+;	p1.pos=           110, 9
+;	p2.pos=           210, 9
+;	p1.counter.scale=   1, 1
+;	p2.counter.scale=   1, 1
+	;---(480p) x2
+	p1.pos=           220, 18
+	p2.pos=           420, 18
+	p1.counter.scale=   2, 2
+	p2.counter.scale=   2, 2
+	;---(720p) x4
+;	p1.pos=           440, 36
+;	p2.pos=           840, 36
+;	p1.counter.scale=   4, 4
+;	p2.counter.scale=   4, 4
+
+	;---(1080p) x6
+;	p1.pos=           660, 54
+;	p2.pos=          1260, 54
+;	p1.counter.scale=   6, 6
+;	p2.counter.scale=   6, 6
+	;---(2160p) x12
+;	p1.pos=          1320, 108
+;	p2.pos=          2520, 108
+;	p1.counter.scale=  12, 12
+;	p2.counter.scale=  12, 12
+
+;------------------
+;------------------
+;---time over
+[begin action 11100]
+210,0,0,0,1,,as020d236
+210,0,0,0,1,,as040d216
+210,0,0,0,1,,as060d196
+210,0,0,0,1,,as080d176
+210,0,0,0,1,,as100d156
+210,0,0,0,1,,as120d136
+210,0,0,0,1,,as140d116
+210,0,0,0,1,,as160d096
+210,0,0,0,1,,as180d076
+210,0,0,0,1,,as200d056
+210,0,0,0,1,,as220d036
+210,0,0,0,1,,as240d016
+210,0,0,0,56
+210,0,0,0,1,,as240d016
+210,0,0,0,1,,as220d036
+210,0,0,0,1,,as200d056
+210,0,0,0,1,,as180d076
+210,0,0,0,1,,as160d096
+210,0,0,0,1,,as140d116
+210,0,0,0,1,,as120d136
+210,0,0,0,1,,as100d156
+210,0,0,0,1,,as080d176
+210,0,0,0,1,,as060d196
+210,0,0,0,1,,as040d216
+210,0,0,0,1,,as020d236
+0,-1,0,0,-1
+
+;--draw game
+[begin action 11200]
+220,0,0,0,1,,as020d236
+220,0,0,0,1,,as040d216
+220,0,0,0,1,,as060d196
+220,0,0,0,1,,as080d176
+220,0,0,0,1,,as100d156
+220,0,0,0,1,,as120d136
+220,0,0,0,1,,as140d116
+220,0,0,0,1,,as160d096
+220,0,0,0,1,,as180d076
+220,0,0,0,1,,as200d056
+220,0,0,0,1,,as220d036
+220,0,0,0,1,,as240d016
+220,0,0,0,-1
+
+;---face bg
+[begin action 400]
+400,1,0,0,1,,a
+[begin action 410]
+400,2,0,0,1,,a
+
+;------------------
+;[EOF]
